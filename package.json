@@ -1,0 +1,29 @@
+{
+  "name": "mongo-blog",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon ./bin/www",
+    "start": "node ./bin/www",
+    "build-client": "cd ./client && yarn build"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "mongoose": "^8.2.1",
+    "morgan": "~1.9.1",
+    "nodemon": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "nodemonConfig": {
+    "env": {
+      "CONNECTION_STRING" : "mongodb+srv://nhatanhpersonal:Thinknick316@cluster0.am1byia.mongodb.net/blog-mern?retryWrites=true&w=majority&appName=Cluster0"
+    }
+  }
+}
